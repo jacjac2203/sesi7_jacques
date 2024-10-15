@@ -82,7 +82,7 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 341,
+                  "duration": 301,
                   "errors": [],
                   "stdout": [
                     {
@@ -91,7 +91,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-10-15T07:35:14.459Z",
+                  "startTime": "2024-10-15T08:23:02.916Z",
                   "attachments": []
                 }
               ],
@@ -105,7 +105,7 @@
         },
         {
           "title": "POST Request",
-          "ok": false,
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -117,50 +117,22 @@
               "results": [
                 {
                   "workerIndex": 1,
-                  "status": "failed",
-                  "duration": 436,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at manggilAjv (D:\\DigitalSkola-QA\\sesi7_jacques\\tests\\sesi7.spec.js:13:19)\n    at D:\\DigitalSkola-QA\\sesi7_jacques\\tests\\sesi7.spec.js:55:5",
-                    "location": {
-                      "file": "D:\\DigitalSkola-QA\\sesi7_jacques\\tests\\sesi7.spec.js",
-                      "column": 19,
-                      "line": 13
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 11 |\u001b[39m     }\n \u001b[90m 12 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     expect(valid)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m }\n \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m test(\u001b[32m'GET Request'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({request}) \u001b[33m=>\u001b[39m {\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "D:\\DigitalSkola-QA\\sesi7_jacques\\tests\\sesi7.spec.js",
-                        "column": 19,
-                        "line": 13
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 11 |\u001b[39m     }\n \u001b[90m 12 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     expect(valid)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m }\n \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m test(\u001b[32m'GET Request'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({request}) \u001b[33m=>\u001b[39m {\u001b[0m\n\n\u001b[2m    at manggilAjv (D:\\DigitalSkola-QA\\sesi7_jacques\\tests\\sesi7.spec.js:13:19)\u001b[22m\n\u001b[2m    at D:\\DigitalSkola-QA\\sesi7_jacques\\tests\\sesi7.spec.js:55:5\u001b[22m"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 654,
+                  "errors": [],
                   "stdout": [],
-                  "stderr": [
-                    {
-                      "text": "AJV Validation Errors: data must have required property 'support'\n"
-                    }
-                  ],
+                  "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-10-15T07:35:14.397Z",
-                  "attachments": [],
-                  "errorLocation": {
-                    "file": "D:\\DigitalSkola-QA\\sesi7_jacques\\tests\\sesi7.spec.js",
-                    "column": 19,
-                    "line": 13
-                  }
+                  "startTime": "2024-10-15T08:23:02.907Z",
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
           "id": "907386c1b505a9aa97c1-ead6fd361005a16545cf",
           "file": "tests/sesi7.spec.js",
-          "line": 29,
+          "line": 30,
           "column": 1
         },
         {
@@ -178,7 +150,7 @@
                 {
                   "workerIndex": 2,
                   "status": "passed",
-                  "duration": 598,
+                  "duration": 613,
                   "errors": [],
                   "stdout": [
                     {
@@ -187,7 +159,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-10-15T07:35:14.457Z",
+                  "startTime": "2024-10-15T08:23:02.929Z",
                   "attachments": []
                 }
               ],
@@ -196,12 +168,12 @@
           ],
           "id": "907386c1b505a9aa97c1-7cfe2db334714e2cf938",
           "file": "tests/sesi7.spec.js",
-          "line": 58,
+          "line": 55,
           "column": 1
         },
         {
           "title": "PUT Request",
-          "ok": false,
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -213,50 +185,26 @@
               "results": [
                 {
                   "workerIndex": 3,
-                  "status": "failed",
-                  "duration": 660,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m\"Apple MacBook Pro 200\"\u001b[39m\nReceived: \u001b[31m\"morpheus\"\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m\"Apple MacBook Pro 200\"\u001b[39m\nReceived: \u001b[31m\"morpheus\"\u001b[39m\n    at D:\\DigitalSkola-QA\\sesi7_jacques\\tests\\sesi7.spec.js:87:31",
-                    "location": {
-                      "file": "D:\\DigitalSkola-QA\\sesi7_jacques\\tests\\sesi7.spec.js",
-                      "column": 31,
-                      "line": 87
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 85 |\u001b[39m   \n \u001b[90m 86 |\u001b[39m     \u001b[36mconst\u001b[39m responseJson \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 87 |\u001b[39m     expect(responseJson\u001b[33m.\u001b[39mname)\u001b[33m.\u001b[39mtoEqual(\u001b[32m\"Apple MacBook Pro 200\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 88 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 89 |\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "D:\\DigitalSkola-QA\\sesi7_jacques\\tests\\sesi7.spec.js",
-                        "column": 31,
-                        "line": 87
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m\"Apple MacBook Pro 200\"\u001b[39m\nReceived: \u001b[31m\"morpheus\"\u001b[39m\n\n\u001b[0m \u001b[90m 85 |\u001b[39m   \n \u001b[90m 86 |\u001b[39m     \u001b[36mconst\u001b[39m responseJson \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 87 |\u001b[39m     expect(responseJson\u001b[33m.\u001b[39mname)\u001b[33m.\u001b[39mtoEqual(\u001b[32m\"Apple MacBook Pro 200\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 88 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 89 |\u001b[39m\u001b[0m\n\n\u001b[2m    at D:\\DigitalSkola-QA\\sesi7_jacques\\tests\\sesi7.spec.js:87:31\u001b[22m"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 670,
+                  "errors": [],
                   "stdout": [
                     {
-                      "text": "{\n  name: \u001b[32m'morpheus'\u001b[39m,\n  job: \u001b[32m'zion resident'\u001b[39m,\n  updatedAt: \u001b[32m'2024-10-15T07:35:17.651Z'\u001b[39m\n}\n"
+                      "text": "{\n  name: \u001b[32m'morpheus'\u001b[39m,\n  job: \u001b[32m'zion resident'\u001b[39m,\n  updatedAt: \u001b[32m'2024-10-15T08:23:06.081Z'\u001b[39m\n}\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-10-15T07:35:14.461Z",
-                  "attachments": [],
-                  "errorLocation": {
-                    "file": "D:\\DigitalSkola-QA\\sesi7_jacques\\tests\\sesi7.spec.js",
-                    "column": 31,
-                    "line": 87
-                  }
+                  "startTime": "2024-10-15T08:23:02.927Z",
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
           "id": "907386c1b505a9aa97c1-e028955216f7307441ba",
           "file": "tests/sesi7.spec.js",
-          "line": 67,
+          "line": 64,
           "column": 1
         }
       ]
@@ -264,11 +212,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-10-15T07:35:12.178Z",
-    "duration": 2979.6490000000003,
-    "expected": 2,
+    "startTime": "2024-10-15T08:23:00.818Z",
+    "duration": 2817.826,
+    "expected": 4,
     "skipped": 0,
-    "unexpected": 2,
+    "unexpected": 0,
     "flaky": 0
   }
 }

@@ -3,8 +3,8 @@ const { Ajv } = require("ajv");
 
 const ajv = new Ajv();
 
-function manggilAjv(responseJson){
-    const valid = ajv.validate(require("./../json-schema/add-object.schema.json"), responseJson);
+function manggilAjv(schemaFile, responseJson){
+    const valid = ajv.validate(require(schemaFile), responseJson);
 
     if (!valid) {
     console.error("AJV Validation Errors:", ajv.errorsText());
@@ -21,9 +21,10 @@ test('GET Request', async ({request}) => {
        expect(response.ok()).toBeTruthy();
 
        const responseJson = await response.json();
+       const schemaFile = "./../json-schema/GET.schema.json";
        expect(responseJson.data.first_name).toEqual("Janet");
 
-    manggilAjv(responseJson);
+    manggilAjv(schemaFile, responseJson);
 });
 
 test('POST Request', async ({request}) => {
@@ -32,16 +33,11 @@ test('POST Request', async ({request}) => {
     }
 
     const body = {
-            "name": "Apple MacBook Pro 200",
-            "data": {
-               "year": 2019,
-               "price": 1849.99,
-               "CPU model": "Intel Core i9",
-               "Hard disk size": "1 TB"
-            }
+        "email": "eve.holt@reqres.in",
+        "password": "pistol"
     }
 
-    const response = await request.post("https://api.restful-api.dev/objects", {
+    const response = await request.post("https://reqres.in/api/register", {
         headers: reqHeaders,
         data: body,
     })
@@ -50,9 +46,10 @@ test('POST Request', async ({request}) => {
     expect(response.ok()).toBeTruthy();
 
     const responseJson = await response.json();
-    expect(responseJson.name).toEqual("Apple MacBook Pro 200");
+    const schemaFile = "./../json-schema/POST.schema.json";
+    expect(responseJson.id).toEqual(4);
 
-    manggilAjv(responseJson);
+    manggilAjv(schemaFile, responseJson);
 });
 
 test('DELETE Request', async ({request}) => {
@@ -82,9 +79,9 @@ test('PUT Request', async ({request}) => {
     expect(response.status()).toEqual(200);
     expect(response.ok()).toBeTruthy();
 
-  
     const responseJson = await response.json();
+    const schemaFile = "./../json-schema/PUT.schema.json";
     expect(responseJson.name).toEqual("morpheus");
 
-    manggilAjv(responseJson);
+    manggilAjv(schemaFile, responseJson);
 });
